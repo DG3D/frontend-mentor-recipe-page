@@ -9,15 +9,13 @@
   --rose-50: hsl(330, 100%, 98%);
 }
 
-html {
-  font-size: 16px
-}
-
 body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  min-height: 100vh;
   align-items: center;
+  justify-content: center;
   background-color: var(--white);
   font-family: Outfit, sans-serif ;
   color: var(--stone-600);
@@ -59,7 +57,7 @@ p {
 }
 
 .recipe-name {
-  font-family: Young Serif;
+  font-family: Young Serif, sans-serif;
   font-size: 2.25rem;
   font-weight: 400;
   line-height: 100%;
@@ -97,7 +95,7 @@ section {
 }
 
 .divider {
-  border-bottom: 1px solid var(--stone-150);
+  border-bottom: .0625rem solid var(--stone-150);
 }
 
 ul {
@@ -118,7 +116,7 @@ ul {
 }
 
 .time-info .bullet {
-  min-width: 16px;
+  min-width: 1rem;
   color: var(--rose-800);
 }
 
@@ -131,7 +129,7 @@ ul {
 }
 
 .ingredient-list .bullet {
-  min-width: 16px;
+  min-width: 1rem;
   color: var(--brown-800);
 }
 
@@ -152,7 +150,7 @@ ol li {
 .step-list .bullet {
   font-size: 1rem;
   font-weight: 700;
-  min-width: 16px;
+  min-width: 1rem;
   line-height: 150%;
   color: var(--brown-800);
 }
@@ -190,7 +188,7 @@ strong {
   font-weight: 700;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   body {
     background-color: var(--stone-100);
     padding: 8rem 3rem;
@@ -206,15 +204,15 @@ strong {
   }
 
   .recipe-content {
-    padding: 40px 0;
+    padding: 2.5rem 0;
   }
 
   .recipe-name {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .recipe-container {
     padding: 2.5rem;
     border-radius: 1.5rem;
